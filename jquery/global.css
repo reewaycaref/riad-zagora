@@ -1,0 +1,205 @@
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+td, img { margin:0; padding:0; outline:0; }
+:focus { outline:0; }
+a:active { outline:none; }
+ol,ul { list-style:none; }
+table { border-collapse:separate; border-spacing:0; }
+td {font-weight:normal; }
+blockquote:before,blockquote:after,q:before,q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+/*
+	Page style
+*/
+body { 
+	position:relative;
+}
+
+#container {
+	width:898px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+#Menu {
+	width:898px;
+	height:40px;
+	margin:0 auto;
+	background-color:#ccc;
+	position:relative;
+	z-index:0;
+}
+
+#example {
+	width:898px;
+	height:400px;
+	position:relative;
+}
+
+#ribbon {
+	position:absolute;
+	top:-6px;
+	left: 724px;
+	z-index:500;
+}
+#win-archi {
+	position:absolute;
+	top:-4px;
+	left: 17px;
+	z-index:500;
+}
+#Titre {
+	position:absolute;
+	top:0px;
+	left: -1px;
+	z-index:20;
+	width: 898px;
+	height: 400px;
+}
+#Etoile {
+	position:absolute;
+	top:-7px;
+	left: 448px;
+	z-index:20;
+	width: 31px;
+	height: 30px;
+}
+#Etoile2 {
+	position:absolute;
+	top:-10px;
+	left: 483px;
+	z-index:20;
+	width: 31px;
+	height: 30px;
+}
+#Drapfr {
+	position:absolute;
+	top:-31px;
+	left: 1004px;
+	z-index:20;
+	width: 31px;
+	height: 21px;
+}
+#Drapgb {
+	position:absolute;
+	top:-31px;
+	left: 1043px;
+	z-index:20;
+	width: 31px;
+	height: 21px;
+}
+#frame {
+	position:absolute;
+	z-index:0;
+	width:1142px;
+	height:440px;
+	top:-21px;
+	left:-21px;
+}
+
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:10;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	background-color:#FFF;
+	width:898px;
+	height:400px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container a {
+	width:898px;
+	height:400px;
+	display:block;
+}
+
+.slides_container a img {
+	display:block;
+}
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:177px;
+	left:-22px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:898px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:3px auto 0;
+	width:210px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:none;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+/*
+	Parser
+*/
+
+#Parser {
+	align:left;
+	width:898px;
+	background-color:#CCC;
+	margin-top:9px;
+	padding:4.5px 0 18px;
+	border-top:1px solid #dfdfdf;
+}
